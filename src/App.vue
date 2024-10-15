@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <header>
-      <h1 class="title">Магазин мороженого</h1>
+      <h1 class="title">Каталог мороженого</h1>
       <p class="information">Выбери свой вкус</p>
       <div class="cart">
         <div class="cart__title-wrapper">

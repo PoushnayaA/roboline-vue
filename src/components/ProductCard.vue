@@ -1,6 +1,5 @@
 <template>
   <li class="products__item">
-    <a class="products__link" href="#">
       <h3 class="products__title">{{ product.title }}</h3>
       <img class="products__img" :src="product.image">
       <div class="products__wrapper">
@@ -8,7 +7,6 @@
         <div class="products__cost products__cost--by-card">Цена по карте: {{ product.costByCard }} ₽</div>
         <button class="products__button" @click="$emit('add-to-cart', product)">Добавить в корзину</button>
       </div>
-    </a>
   </li>
 </template>
 
@@ -25,18 +23,13 @@ export default {
 
 .products__item {
 height: 100%;
-}
-
-.products__link {
-  text-decoration: none;
-  border: 1px solid #3a5b7d45;
+border: 1px solid #3a5b7d45;
   border-radius: 5px;
   padding: 10px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   box-sizing: border-box;
 }
 
